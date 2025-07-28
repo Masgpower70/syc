@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nosotros | SYC</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="contenedor header-content">
+      <div class="logo">SYC</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="contacto.html" class="activo">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- SECCIÓN CONTACTO -->
+  <section id="contacto" class="contacto">
+    <h2>Contáctanos</h2>
+    <p class="subtitulo">¿Tienes dudas? ¡Escríbenos y te responderemos lo antes posible!</p>
+
+    <form action="enviar.php" method="POST" class="formulario">
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="email" name="email" placeholder="Tu correo" required>
+      <input type="text" name="asunto" placeholder="Asunto" required>
+      <textarea name="mensaje" placeholder="Tu mensaje..." rows="5" required></textarea>
+      <button type="submit">Enviar mensaje</button>
+    </form>
+
+    <div class="contacto-extra">
+      <p><strong>Ubicación:</strong> La Paz, Bolivia</p>
+      <a href="https://wa.me/5917XXXXXXXX" target="_blank" class="whatsapp-boton">📱 Escríbenos por WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>&copy; 2025 SYC - Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>

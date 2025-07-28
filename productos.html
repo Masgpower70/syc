@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Productos | SYC</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="contenedor header-content">
+      <div class="logo">SYC</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="productos.html" class="activo">Productos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="contenedor">
+      <h1 class="titulo-seccion">Productos destacados</h1>
+
+     <section id="productos" class="seccion-productos">
+  <h1 class="titulo-principal">Nuestros Productos</h1>
+
+  <!-- CATEGORÍA DEPORTE -->
+  <div class="categoria">
+    <h2>Deporte</h2>
+    <div class="contenedor-slider">
+      <button class="btn-slider izquierda" onclick="moverSlider('deporte', -1)">&#10094;</button>
+      <div class="slider" id="slider-deporte">
+        <div class="producto">
+          <img src="imagen/producto.jfif" alt="Zapatilla 1" />
+          <h3>Zapatilla Nike</h3>
+          <p>Bs 780</p>
+        </div>
+        <div class="producto">
+          <img src="imagen/producto.jfif" alt="Short Adidas" />
+          <h3>Short Adidas</h3>
+          <p>Bs 120</p>
+        </div>
+        <!-- Más productos deporte -->
+      </div>
+      <button class="btn-slider derecha" onclick="moverSlider('deporte', 1)">&#10095;</button>
+    </div>
+  </div>
+
+  <!-- CATEGORÍA CASUAL -->
+  <div class="categoria">
+    <h2>Casual</h2>
+    <div class="contenedor-slider">
+      <button class="btn-slider izquierda" onclick="moverSlider('casual', -1)">&#10094;</button>
+      <div class="slider" id="slider-casual">
+        <div class="producto">
+          <img src="imagen/producto.jfif" alt="Jean Azul" />
+          <h3>Jean Azul</h3>
+          <p>Bs 250</p>
+        </div>
+        <div class="producto">
+          <img src="imagen/producto.jfif" alt="Polera Blanca" />
+          <h3>Polera Blanca</h3>
+          <p>Bs 90</p>
+        </div>
+        <!-- Más productos casual -->
+      </div>
+      <button class="btn-slider derecha" onclick="moverSlider('casual', 1)">&#10095;</button>
+    </div>
+  </div>
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/5917XXXXXXXX" class="whatsapp" target="_blank">
+    <img src="imagen/wha.jpg" alt="WhatsApp">
+  </a>
+</section>
